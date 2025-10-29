@@ -1,0 +1,6 @@
+{
+  "description": "An AI-powered task and note management web application that allows users to add tasks via text or voice, automatically categorizes them, and displays them in a weekly calendar or a list view.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
