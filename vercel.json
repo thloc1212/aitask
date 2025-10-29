@@ -5,9 +5,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "regions": ["sin1"],
-  "env": {
-    "VITE_GEMINI_API_KEY": "@gemini-api-key",
-    "VITE_API_BASE_URL": "@api-base-url"
-  }
+  "regions": ["sin1"]
 }
