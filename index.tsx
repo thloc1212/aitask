@@ -557,7 +557,7 @@ type View = 'week' | 'list';
 // --- CONSTANTS ---
 const API_KEY = import.meta.env.GEMINI_API_KEY; // Access environment variable
 const PREDEFINED_TAGS = ["Học tập", "Sức khỏe", "Công việc", "Mối quan hệ", "Cá nhân", "Mua sắm"];
-const API_BASE_URL = 'http://localhost:3001/api'; // The address of your backend server
+const API_BASE_URL = import.meta.env.API_BASE_URL || 'http://localhost:3001/api'; // Get from env or fallback
 
 // Debug env variable loading
 console.log('API Key status:', API_KEY ? 'Present' : 'Missing');
