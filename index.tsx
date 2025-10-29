@@ -555,9 +555,13 @@ type NewTaskData = Omit<Task, 'id' | 'created_at' | 'status'>;
 type View = 'week' | 'list';
 
 // --- CONSTANTS ---
-const API_KEY = import.meta.env.GEMINI_API_KEY; // Access environment variable
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY; // Access environment variable
 const PREDEFINED_TAGS = ["Học tập", "Sức khỏe", "Công việc", "Mối quan hệ", "Cá nhân", "Mua sắm"];
-const API_BASE_URL = import.meta.env.API_BASE_URL || 'http://localhost:3001/api'; // Get from env or fallback
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api'; // Get from env or fallback
+
+// Debug environment variables in production
+console.log('Environment:', import.meta.env.MODE);
+console.log('API Key status:', API_KEY ? 'Present' : 'Missing');
 
 // Debug env variable loading
 console.log('API Key status:', API_KEY ? 'Present' : 'Missing');
